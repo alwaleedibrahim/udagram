@@ -54,10 +54,8 @@ jobs:
             aws elasticbeanstalk create-application-version --application-name udagram-api --version-label <<pipeline.git.revision>> --source-bundle S3Bucket="elasticbeanstalk-us-east-1-796467632808",S3Key="Archive.zip"
             aws elasticbeanstalk update-environment --application-name udagram-api --environment-name udagram-api-env --version-label <<pipeline.git.revision>>
 workflows:
-  configuration:
-    jobs:
-      - conf
   build_and_deploy:
     jobs:
+      - conf
       - frontend
       - server
