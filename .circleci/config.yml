@@ -31,7 +31,7 @@ jobs:
       - aws-cli/install
       - run:
           name: Deploy Frontend
-          command: aws s3 cp --recursive --acl public-read ./www s3://my-7964-6763-2808-bucket/
+          command: aws s3 cp --recursive --acl public-read ./www $S3_BUCKET_FRONTEND
   server:
     working_directory: ~/app/udagram-api
     executor: node/default
@@ -58,4 +58,3 @@ workflows:
     jobs:
       - conf
       - frontend
-      - server
