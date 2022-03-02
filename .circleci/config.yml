@@ -51,6 +51,7 @@ jobs:
       - run:
           name: Deploy Server
           command: |-
+            eb init
             eb use $EB_ENV
             eb deploy $EB_ENV
 workflows:
