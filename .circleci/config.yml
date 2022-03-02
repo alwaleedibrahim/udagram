@@ -46,9 +46,6 @@ jobs:
           command: |-
             npm run build
             npm run zip
-      - run:
-          name: "Set Python Version"
-          command: pyenv global 3.7.0
       - aws-cli/install
       - eb/setup
       - run:
