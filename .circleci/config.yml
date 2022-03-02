@@ -51,7 +51,7 @@ jobs:
       - run:
           name: Deploy Server
           command: |-
-            eb init
+            eb init udagram-api --platform node.js --region $AWS_REGION
             eb use $EB_ENV
             eb deploy $EB_ENV
 workflows:
