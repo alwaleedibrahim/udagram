@@ -4,8 +4,8 @@ orbs:
   aws-cli: circleci/aws-cli@2.0.0
 jobs:
   conf:
-    docker:
-      - image: alpine:3.7
+    working_directory: ~/app/
+    executor: node/default
     steps:
       - aws-cli/install
       - run:
