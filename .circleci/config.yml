@@ -68,7 +68,7 @@ workflows:
       - conf: 
         filters:
           branches:
-            only: 
+            only:
               - master
       - frontend:
         requires:
