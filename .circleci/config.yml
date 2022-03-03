@@ -51,7 +51,7 @@ jobs:
       - run:
           name: Deploy Server
           command: |-
-            eb init udagram-api --platform node.js --region $AWS_REGION
+            eb init $EB_APP --platform node.js --region $AWS_REGION
             eb use $EB_ENV
             eb setenv DB_PORT=$DB_PORT \
             JWT_SECRET=$JWT_SECRET \
