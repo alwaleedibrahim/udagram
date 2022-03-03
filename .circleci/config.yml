@@ -53,14 +53,14 @@ jobs:
           command: |-
             eb init udagram-api --platform node.js --region $AWS_REGION
             eb use $EB_ENV
-            eb setenv DB_PORT=$DB_PORT
-            eb setenv JWT_SECRET=$JWT_SECRET
-            eb setenv PORT=$PORT
-            eb setenv POSTGRES_DB=$POSTGRES_DB
-            eb setenv POSTGRES_HOST=$POSTGRES_HOST
-            eb setenv POSTGRES_PASSWORD=$POSTGRES_PASSWORD
-            eb setenv POSTGRES_USERNAME=$POSTGRES_USERNAME
-            eb setenv URL=$URL
+            eb setenv DB_PORT=$DB_PORT \
+            JWT_SECRET=$JWT_SECRET \
+            PORT=$PORT \
+            POSTGRES_DB=$POSTGRES_DB \
+            POSTGRES_HOST=$POSTGRES_HOST \
+            POSTGRES_PASSWORD=$POSTGRES_PASSWORD \
+            POSTGRES_USERNAME=$POSTGRES_USERNAME \
+            URL=$URL
             eb deploy $EB_ENV
 workflows:
   build_and_deploy:
