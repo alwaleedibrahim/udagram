@@ -1,5 +1,7 @@
 # Udagram - Hosting Full Stack Application
 
+[![alwaleedibrahim](https://circleci.com/gh/alwaleedibrahim/udagram.svg?style=sheild)](#)
+
 ## Project Overview
 
 This project is about deploying full stack application to Amazon web service. In this project we use S3, EB and RDS services from Amazon, in addition to circleci pipelines to implement CI/CD.
