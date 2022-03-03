@@ -1,6 +1,7 @@
 # Udagram - Hosting Full Stack Application
 
-[![alwaleedibrahim](https://circleci.com/gh/alwaleedibrahim/udagram.svg?style=sheild)](#)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=shield)](https://circleci.com/gh/alwaleedibrahim/udagram)
+[![CircleCI](https://circleci.com/gh/circleci/circleci-docs.svg?style=svg)](https://circleci.com/gh/alwaleedibrahim/udagram)
 
 ## Project Overview
 
