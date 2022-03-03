@@ -65,22 +65,22 @@ jobs:
 workflows:
   build_and_deploy:
     jobs:
-      - conf: 
-        filters:
-          branches:
-            only:
+      - conf:
+          filters:
+            branches:
+              only:
               - master
       - frontend:
-        requires:
-          - conf
-        filters:
-          branches:
-            only: 
+          requires:
+            - conf
+          filters:
+            branches:
+              only: 
               - master
       - api:
-        requires:
-          - conf
-        filters:
-          branches:
-            only: 
+          requires:
+            - conf
+          filters:
+            branches:
+              only: 
               - master
